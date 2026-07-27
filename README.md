@@ -1,10 +1,19 @@
 # 🚀 EVALUATOR: START IN THE [EVALUATOR_START_HERE](file:///d:/Skylark/EVALUATOR_START_HERE/) FOLDER!
 
+## 🔗 Live Hosted Application
+- **Frontend App (Live on Vercel)**: [https://skylark-assignment-theta.vercel.app/](https://skylark-assignment-theta.vercel.app/)
+- **Backend API (Live on Render)**: [https://skylark-assignment.onrender.com/](https://skylark-assignment.onrender.com/)
+- **Sign-In Credentials**:
+  - **Username**: `founder`
+  - **Password**: `skylark2026`
+- *Note: Custom subdomain mapping to `https://skylark.sachith.xyz` is set up and will resolve automatically once DNS propagation completes.*
+
 All assignment deliverables, specifications, and setups are compiled inside the **[EVALUATOR_START_HERE](file:///d:/Skylark/EVALUATOR_START_HERE/)** directory for immediate access:
 - **[2-Page Decision Log](file:///d:/Skylark/EVALUATOR_START_HERE/decision_log.md)**
 - **[System Limitations & Caching](file:///d:/Skylark/EVALUATOR_START_HERE/limitations_and_resilience.md)**
 - **[Future Roadmap](file:///d:/Skylark/EVALUATOR_START_HERE/future_roadmap.md)**
 - **[Setup & Imports Guide](file:///d:/Skylark/EVALUATOR_START_HERE/monday_setup_instructions.md)**
+
 
 ---
 
