@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #121212;
+  --bg-surface: #1e1e1e;
+  --border-glass: #2e2e2e;
+  --glow-blue: rgba(62, 207, 142, 0.1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background-color: var(--bg-primary);
+  color: #ededed;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #121212; }
+::-webkit-scrollbar-thumb { background: #2e2e2e; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3ecf8e; }
+
+/* Supabase-style clean card */
+.glass-card {
+  background: #1e1e1e;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+}
+
+/* Solid dashboard background */
+.bg-mesh {
+  background-color: #121212;
+}
+
+/* Glow effects matching Supabase green */
+.glow-blue { box-shadow: 0 4px 20px rgba(62, 207, 142, 0.08); }
+.glow-cyan { box-shadow: 0 4px 20px rgba(62, 207, 142, 0.08); }
+
+/* Typing indicator in green */
+.typing-dot {
+  width: 6px; height: 6px;
+  background: #3ecf8e;
+  border-radius: 50%;
+  animation: bounce 1.2s ease-in-out infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+@keyframes bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.5; }
+  40% { transform: translateY(-6px); opacity: 1; }
+}
+
+/* Chat message animations */
+.message-appear { animation: slideUp 0.3s ease-out; }
+
+/* Number formatting */
+.stat-value { font-variant-numeric: tabular-nums; }
