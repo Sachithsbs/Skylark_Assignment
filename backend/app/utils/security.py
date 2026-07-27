@@ -12,7 +12,8 @@ from app.config import get_settings
 from app.models.schemas import UserInfo
 from app.database import get_db, User
 
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd_context = CryptContext(schemes=["sha256_crypt"], deprecated="auto")
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
 
 
