@@ -14,10 +14,12 @@ settings = get_settings()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[settings.FRONTEND_URL, "http://localhost:5173"],
+    allow_origin_regex=r"https://.*\.vercel\.app|https://.*\.sachith\.xyz|https://sachith\.xyz|http://localhost:\d+",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 app.include_router(auth.router, prefix="/api")
 app.include_router(analytics.router, prefix="/api")
