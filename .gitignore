@@ -1,0 +1,40 @@
+# Root GitIgnore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Frontend Dependencies & Builds
+node_modules/
+dist/
+build/
+.svelte-kit/
+.next/
+out/
+.nuxt/
+.cache/
+
+# Local configuration
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
